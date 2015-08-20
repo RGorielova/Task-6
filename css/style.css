@@ -1,0 +1,346 @@
+html, body, div, span, h1, h2, p, img, small, ul, li, a, 
+fieldset, form, label, legend, caption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	box-sizing: border-box;
+	list-style-type: none;
+}
+
+html, body {
+	width: 1000px;
+	padding: 0 10px;
+	margin: 0 auto;
+	display: block;
+	font-family: Arial, sans-serif; 
+	font-size: 12px;
+	background: url(../images/bgs.png);
+	background-repeat: repeat-x;
+	position: relative;
+	min-height: 100vh;
+}
+
+.header{
+	height: 149px;
+	overflow: hidden;
+	padding: 15px 0;
+}
+.col-left {
+	float: left;
+	width: 40%;
+	padding-right: 12px;
+	position: relative;
+}
+.col-right {
+	text-align: right;
+	float: right;
+	width: 60%;
+	position: relative;;
+}
+p {
+	margin: 15px 0;
+	font-size: 12px;
+}
+a {
+	display: inline-block;
+}
+hr {
+	height: 5px;
+	border-radius: 5px;
+	background-color: darkgreen;
+	border-color: black;
+	margin-top: -40px;
+	margin-left: 55px;
+}
+h2 {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+}
+li.button1, li.button2, li.button3 {
+	display: inline-block;
+	padding: 10px 0 10px 10px;
+}
+.button1 a {
+	float: left;
+	background: url(../images/icon.png);
+	width: 11px;
+	height: 11px;
+}
+.button2 a {
+	float: left;
+	background: url(../images/icon.png) -11px 0;
+	width: 11px;
+	height: 11px;
+}
+.button3 a {
+	float: left;
+	background: url(../images/icon.png) -22px 0;
+	width: 11px;
+	height: 11px;
+}
+ul.nav {
+	text-align: justify;
+	/* Opera Presto */
+	font-size: 1px;
+	/* IE6-7 */
+	text-justify: newspaper; 
+	zoom: 1;
+	text-align-last: justify;
+	padding-left: 60px;
+	padding-top: 23px;
+}
+ul.nav:after{
+	visibility: hidden;
+	overflow: hidden;
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 0px;
+}
+.nav li {
+	display: inline-block;
+	padding: 0;
+}
+.nav a {
+	color: #000;
+	font-size: 14px;
+	display: inline-block;
+	padding: 19px 0px 0px;
+	border-top: 3px solid rgba(255, 255, 255, 0);
+}
+.nav a:focus, .nav a:hover {
+	-webkit-border-image: url(../images/techno-contacts.png) 10 0 0;
+	color: #055f01;
+	text-decoration: none;
+}
+.nav-active {
+	-webkit-border-image: url(../images/techno-contacts.png) 10 0 0;
+	color: #055f01 !important;
+	text-decoration: none;
+}
+.sidebar {
+	display: block;
+	position:absolute;
+	float: left;
+	width: 200px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 12px;
+}
+.sidebar li {
+	position: relative;
+}
+.sidebar li a {
+	border: 1px solid transparent;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 0 14px 10px 14px;
+}
+.sidebar li:before {
+	content: " ";
+	width: 19px;
+	height: 19px;
+	background: url(../images/circle.png) -19px 0;
+	top: -9px;
+	left: 5px;
+	position: absolute;
+}
+.sidebar li a:hover:before, .sidebar li a:focus:before{
+	content: "";
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	background: url(../images/circle.png) 0 0;
+	top: -9px;
+	left: 5px;
+}
+.sidebar li a:hover, .sidebar li a:focus {
+	color: #000;
+	text-decoration: none;
+	border: 1px solid #2a6525;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 0 14px 10px 14px;
+}
+li a.side-active {
+	color: #000;
+	text-decoration: none;
+	border: 1px solid #2a6525;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 0 14px 10px 14px;
+}
+.sidebar li a.side-active:before {
+	content: "";
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	background: url(../images/circle.png) 0 0;
+	top: -9px;
+	left: 5px;
+}
+
+.second {
+	display: block;
+	margin: 0;
+	margin-left: 200px;
+	min-height: 100%;
+	padding: 4px 19px 80px 19px;
+}
+.tabset {
+	height: 70px;
+	width: 320px;
+}
+.tabset li {
+	display: inline-block;
+	padding: 0;
+}
+ul.tabset {
+	text-align: justify; /* Opera Presto */
+	font-size: 1px; /* IE6-7 */
+	text-justify: newspaper; 
+	zoom: 1;
+	text-align-last: justify;
+	padding-top: 23px;
+}
+ul.tabset:after{
+	visibility: hidden;
+	overflow: hidden;
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 0px;
+}
+a.tab {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 14px;
+	display: inline-block;
+	padding: 19px 0px 0px;
+	border-top: 3px solid rgba(255, 255, 255, 0);
+}
+a.tab:focus, a.tab:hover {
+	border-top: 3px solid #5094F2;
+	-webkit-border-image: url(../images/techno-contacts.png) 10 0 0;
+	color: #000;
+	text-decoration: none;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+}
+.tab-active {
+	-webkit-border-image: url(../images/techno-contacts.png) 10 0 0;
+	color: #000 !important;
+	text-decoration: none;
+}
+hr.ts {
+	height: 5px;
+	border-radius: 5px;
+	background-color: darkgreen;
+	border-color: black;
+	margin-top: -48px;
+	margin-left: 0px;
+}
+.description {
+	text-align: left;
+	margin: 30px 0 30px 477px;
+}
+.img {
+	float: left;
+	position: absolute;
+}
+img {
+	vertical-align: middle;
+}
+table { 
+	width: 100%;
+	border-spacing: 0;
+	border-style: none;
+	font-size: 12px;
+	margin: 10px 0 30px;
+}
+tr:nth-child(2n+1) {
+	background: #d9f4ff; /* Цвет фона */
+} 
+td:nth-child(2n) {
+	text-align: center;
+} 
+td {
+	padding-left: 15px;
+}
+li.list {
+	margin-top: 10px;
+}
+ul.grey {
+	margin-left: 25px;
+}
+ul.grey li {
+	margin: 5px 0;
+}
+ul.grey li:before {
+	content: "-";
+	margin-right: 5px;
+}
+
+.content {
+	overflow: hidden;
+	text-align: right;
+	margin-bottom: 5px;
+}
+.grey {
+	color: #616161;
+}
+.addr {
+	font-size: 16px;
+}
+.tel {
+	font-size: 18px;
+}
+.italic {
+	font-style: italic;
+	font-weight: bold;
+}
+.bg-house {
+	background-image: url(../images/house.png);
+	overflow: hidden;
+	padding-top: 19px;
+	min-height: 256px;
+}
+.footer {
+	font-size: 12px;
+	bottom: 0;;
+	width: 980px;
+	overflow: hidden;
+	position: absolute;;
+}
+.small {
+	font-size: 10px;
+}
+
+
+
+
+.col-1 {
+	float: left;
+	width: 33%;
+	padding-right: 12px;
+	position: relative;
+}
+.col-2 {
+	text-align: right;
+	float: right;
+	width: 30%;
+	position: relative;;
+}
+.col-3 {
+	text-align: center;
+
+	float: left;
+	width: 30%;
+	position: relative;;
+}
